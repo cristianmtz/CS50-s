@@ -1,4 +1,4 @@
-/*Print a right-aligned puramid
+/*Print a right-aligned pyramid
 
 #
 ##
