@@ -61,7 +61,7 @@ void pyramidRight(int height)
        }
        for(int k = 0; k <= i; k++)
        {
-            printf("#"); // print hashes.
+            printf("#"); // print hashes. changed
        }
         printf("\n"); // go to next line.
        
