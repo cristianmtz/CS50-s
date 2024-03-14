@@ -1,9 +1,15 @@
-/*Print a right-aligned pyramid
+/*Print a right-left-aligned pyramid
 
 #
 ##
 ###
 ####
+##### 
+
+    #
+   ##
+  ###
+ ####
 #####
 
 author: Cristian M.
@@ -17,7 +23,8 @@ author: Cristian M.
 
 
 /*---------------------Prototype functios----------*/
-void print_row(int height);
+void pyramidLeft(int height);
+void pyramidRight(int height);
 
 
 
@@ -25,13 +32,13 @@ int main(void)
 {
     
     int height = get_int("Height: ");
-    print_row(height);
+    pyramidRight(height);
     
     return 0;
 }
 
 
-void print_row(int height)
+void pyramidLeft(int height)
 {
 
     for (int i = 0; i < height; i++)
@@ -42,5 +49,23 @@ void print_row(int height)
         }
         printf("\n");
     }
+}
+
+void pyramidRight(int height)
+{
+    for (int i = 0; i < height; i++)
+    {
+       for (int j = 0; j < height - i; j++)
+       {
+            printf(" ");
+       }
+       for(int k = 0; k <= i; k++)
+       {
+            printf("#"); // print hashes.
+       }
+        printf("\n"); // go to next line.
+       
+    }
+
 }
 
